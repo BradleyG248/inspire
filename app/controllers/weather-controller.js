@@ -7,7 +7,7 @@ import store from "../store.js";
 //TODO Complete rendering data to the screen
 function drawWeather() {
   console.log("THE WEATHER MAN SAYS:", store.State.weather);
-  document.getElementById("weather").innerHTML = `<h1>${store.State.weather.fahrenheit}</h1>`
+  document.getElementById("weather").innerHTML = `<h1>Temperature: ${store.State.weather.fahrenheit}</h1>`
 }
 export default class WeatherController {
   constructor() {

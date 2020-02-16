@@ -12,10 +12,11 @@
 </head>
 
 <body id="bg-image" class = "container body">
-	<div id="weather" class = bg-primary>
+	<div class="row">
+	<div id="weather" class = " col-12 col-md-4 offset-md-8 d-flex justify-content-end bg-primary">
 		Your Weather Template
 	</div>
-
+</div>
 
 	<div class = "row">
 		<div id="todo-error"></div>
@@ -27,13 +28,13 @@
 			</div>
 			<button class="btn btn-primary" type="submit">Submit</button>
 		</form>
-		<div id="todos" class = "d-flex flex-column align-items-start bg-dark text-white">
+		<div id="todos" class = "d-flex flex-column justify-content-center align-items-start bg-dark text-white mb-4 mt-4">
 
 		</div>
 	</div>
 </div>
-	<div class="row d-flex justify-content-center">
-		<div id="quote" class = "bg-light col">
+	<div class="row d-flex justify-content-center fixed-bottom mb-4">
+		<div id="quote" class = "bg-light col-12 col-md-6">
 			The Quote
 		</div>
 	</div>
@@ -47,8 +48,8 @@
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 		crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script type="module" src="app/main.js"></script>
 </body>
 
 </html>
-<html>

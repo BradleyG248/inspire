@@ -11,8 +11,12 @@ img.checkbox{
   max-width:1rem;
   max-height:1rem;
   cursor: pointer;
-  height:auto;
 }
 .body{
   min-height:100vh;
+}
+img.delete{
+  max-width:1.5rem;
+  max-height:1.5rem;
+  cursor: pointer;
 }

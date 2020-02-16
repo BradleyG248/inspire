@@ -45,13 +45,32 @@ class TodoService {
     //TODO Work through this one on your own
     //		what is the request type
     //		once the response comes back, what do you need to insure happens?
-    todoApi.delete(todoId)
+    // @ts-ignore
+    swal({
+      title: "Are you sure?",
+      text: "Once deleted, you will not be able to recover this list item!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+        // @ts-ignore
+        swal("Poof! Your list item has been deleted!", {
+          icon: "success",
+        });
+        todoApi.delete(todoId)
     .then(res=>{
       this.getTodos();
     })
     .catch(error =>{
       console.error(error)
     })
+      } else {
+        // @ts-ignore
+        swal("Your list item is safe!");
+      }
+    });
   }
 }
 

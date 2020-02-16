@@ -6,9 +6,9 @@ export default class Todo {
   }
   get Template() {
     return `
-    <div class = "d-flex flex-row">
+    <div class = "d-flex align-items-center justify-content-around mb-1 mt-1">
       <img src = "assets/${this.completed}.png" onclick = "app.todoController.toggleTodoStatus('${this._id}')" class = "img-fluid checkbox">
-      <p>${this.description}</p> <button class = "btn btn-danger" onclick = "app.todoController.removeTodo('${this._id}')">Delete</button>
+      <p class = "mb-0 ml-1">${this.description}</p><img src = "assets/delete.png" onclick = "app.todoController.removeTodo('${this._id}')" class = "img-fluid delete">
       </div>
     `
   }
