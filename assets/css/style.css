@@ -1,0 +1,18 @@
+#todo-error{
+  color: red;
+  font-size: 2em;
+}
+.bg-image{
+  background-position:center;
+  background-size:cover;
+  min-height: 100vh;
+}
+img.checkbox{
+  max-width:1rem;
+  max-height:1rem;
+  cursor: pointer;
+  height:auto;
+}
+.body{
+  min-height:100vh;
+}
